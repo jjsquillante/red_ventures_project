@@ -153,5 +153,20 @@
   .is-text--align {
     text-align: right;
   }
+
+  .md-head {
+    padding: .5em .75em;
+  }
+  .md-body {
+    padding: .25em;
+  }
+  .md-desc {
+    padding: .5em;
+  }
+
+  .md-contact {
+    background-color: transparent;
+    padding: .5em;
+  }
   
 }
