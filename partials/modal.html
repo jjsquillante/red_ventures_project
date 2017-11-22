@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <title>RV Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 750px)" href="./style/mobile.css">
+  </head>
+  <body>
+  	<section class="wrapper">
+      <nav class="nav">
+  <div class="nav--header">
+	  <div class="nav--brand"> 7 Dealers in 28205 </div>
+    <div id="nav-btn--link">    
+        <div class="nav-menu--title">
+          <p>Filter Results</p>
+        </div>       
+        <div class="carat--border is-hidden--desktop">
+          <span class="carat up"></span>  
+        </div>
+      </div>                
+  </div>    
+  <ul id="nav--menu" class="is--hidden">
+    <li class="nav--item font--is-medium align-icons">
+      <svg xmlns="http://www.w3.org/2000/svg" width="23.969" height="23.969" viewBox="0 0 23.969 23.969" class="add-margin">
+        <rect class="radio-btn-unchecked cls-btn" x="0.5" y="0.5" width="22.969" height="22.969" rx="5" ry="5"/>
+        <rect class="radio-btn-checked cls-checked" x="3.4" y="3.4" width="17" height="17" rx="5" ry="5"/>
+      </svg>        
+    Service </li>
+    <li class="nav--item font--is-medium align-icons">
+      <svg xmlns="http://www.w3.org/2000/svg" width="23.969" height="23.969" viewBox="0 0 23.969 23.969" class="add-margin">
+        <rect class="radio-btn-unchecked cls-btn" x="0.5" y="0.5" width="22.969" height="22.969" rx="5" ry="5"/>
+        <rect class="radio-btn-checked cls-checked" x="3.4" y="3.4" width="17" height="17" rx="5" ry="5"/>
+      </svg>
+    Installation </li>
+    <li class="nav--item font--is-medium align-icons">
+      <svg xmlns="http://www.w3.org/2000/svg" width="23.969" height="23.969" viewBox="0 0 23.969 23.969" class="add-margin">
+        <rect class="radio-btn-unchecked cls-btn" x="0.5" y="0.5" width="22.969" height="22.969" rx="5" ry="5"/>
+        <rect class="radio-btn-checked cls-checked" x="3.4" y="3.4" width="17" height="17" rx="5" ry="5"/>
+      </svg>                 
+    Residential </li>
+    <li class="nav--item font--is-medium align-icons">
+      <svg xmlns="http://www.w3.org/2000/svg" width="23.969" height="23.969" viewBox="0 0 23.969 23.969" class="add-margin">
+        <rect class="radio-btn-unchecked cls-btn" x="0.5" y="0.5" width="22.969" height="22.969" rx="5" ry="5"/>
+        <rect class="radio-btn-checked cls-checked" x="3.4" y="3.4" width="17" height="17" rx="5" ry="5"/>
+      </svg>                  
+    Commercial </li>                    
+  </ul>  
+</nav>
+      <section class="card--grid">
+        <div id="card--group"> 
+          <!-- yields card from _index.ejs -->
+         <div class="md-modal md-effect" id="modal-1">
+  <div class="md-content">
+    <div class="md-head">
+      <div class="md-btn--close">
+        <span id="md-close" class="is--bold">x</span>
+      </div>
+      <div class="md-head--nav">
+        <p class="font--is-small is-uppercase">Email</p>
+      </div>
+      <div class="md-head-title">  
+        <h1 id="md-title" class="font--is-large"></h1>
+      </div>
+    </div>
+    <div class="md-body">
+      <div class="md-desc">
+        <p id="modal-description" class="font--is-medium is--bold"></p>
+      </div>
+      <div class="md-contact">
+        <div class="field">
+          <label class="label">First and last name</label>
+          <div class="validation">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+                <image id="valid-icon" width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAMAAACeyVWkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA/1BMVEUAAAA206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206EAAABbkgkNAAAAU3RSTlMAQ5rY+/rUlTkzyvSgWTIgNV2pvCdl+ZYUG6j1UvhTZ09t8yKxCrol/Sq+0xW7gnW/SuFLR0DwXE5N3ml4uc7EejjAMfwBo4HqGFH2Pj0hsN3t3OKCTDMAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QoaCjY0wectywAAAOpJREFUGNNdz3lbgkAQBvA3cdVExSvwSkNJ0VKhvPPAvDVPvv93aSPQxfljdvf3zO7sAFY8eDivSXz+AG7xGORD4YgQjcVJIungkyil7G06k83Z+Jxn7hXIi3VdZBGQiyWagxLcoSi0O59i5LUso6JW4QmxWHt7B+oNcOF7RFODN3KP0D9gCsBni0W0OyBRoCv2GER/AF+Mrl9i74YYjuCPw+LxFTExMCVpa9DvK87mtFUi4x5toS1pTvIFl67Wm79lS2SmcrX7sX9SVCrOm9p67xQcjmq9qbf7w4m63DCPVRu10/kyMoT/4y9rdRpTDaDYpwAAAABJRU5ErkJggg=="/>
+             </svg>
+          </div>
+          <div class="control is-margin">
+            <input class="input" placeholder="Jane Smith" type="text">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Phone number</label>
+          <div class="validation validation--small">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+                <image id="invalid-icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAQAAABuvaSwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhChoKODfGbVH/AAABWElEQVQoz43TMWuTURgF4Cd36CDEIZPN4mzAWKVxjLEXahdBkIx2cQoO/oJM7R/IEDq5xNEKgkstXFozJqBNhDi7RKcMljq41KFBE63Jd9b34UznzZlJuuaJTXcUMPHBoZfx25977jfM29HwyWs9X7Hqrsdu2tOMp3M43fDWD8/jkbmk+1queBg/Q4BU0tVV+ZsSj1R0dVNp2pzyPup6Gs9dmpTzQtXteBqw60zjf5R4ruHMLrm06ovNeGxhUs2h68G2wTJKPDawHWzZX0bBvq2grJcJ95SDgnEmPFYImeA0wUQxkyyaBEPrmfC6YXCgngnXHQQda6m6TKaqNR2kVjpJKwvpSjpJrYvVNeW1Fxa35TWne04l773xLP68rFXbI/fiaLrnOFKzoZ9q/9Cavg21OGL2ra7a0TDwSt8YRRV1t+xpxu8XJjfXU7TtgfL0YYfe6cSZMfwCNWdnwd6BAVkAAAAASUVORK5CYII="/>
+              </svg>
+          </div>
+          <div class="control is-margin">
+            <input class="input input--small" placeholder="" type="text">
+          </div>
+        </div>  
+        <div class="field">
+          <label class="label">Email address</label>
+          <div class="validation">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+                <image id="invalid-icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAQAAABuvaSwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhChoKODfGbVH/AAABWElEQVQoz43TMWuTURgF4Cd36CDEIZPN4mzAWKVxjLEXahdBkIx2cQoO/oJM7R/IEDq5xNEKgkstXFozJqBNhDi7RKcMljq41KFBE63Jd9b34UznzZlJuuaJTXcUMPHBoZfx25977jfM29HwyWs9X7Hqrsdu2tOMp3M43fDWD8/jkbmk+1queBg/Q4BU0tVV+ZsSj1R0dVNp2pzyPup6Gs9dmpTzQtXteBqw60zjf5R4ruHMLrm06ovNeGxhUs2h68G2wTJKPDawHWzZX0bBvq2grJcJ95SDgnEmPFYImeA0wUQxkyyaBEPrmfC6YXCgngnXHQQda6m6TKaqNR2kVjpJKwvpSjpJrYvVNeW1Fxa35TWne04l773xLP68rFXbI/fiaLrnOFKzoZ9q/9Cavg21OGL2ra7a0TDwSt8YRRV1t+xpxu8XJjfXU7TtgfL0YYfe6cSZMfwCNWdnwd6BAVkAAAAASUVORK5CYII="/>
+              </svg>
+          </div>
+          <div class="control is-margin">
+            <input class="input" placeholder="" type="text">
+          </div>
+        </div>  
+        <div class="field">
+          <label class="label">Comments or questions</label>
+          <label class="validation font--is-small"> <em>optional</em> </label>
+          <div class="control">
+            <textarea name="message" class="msg-box--area"></textarea>
+          </div>
+        </div>
+        <div class="is-margin is-relative">  
+          <p class="font--is-medium is--bold"> Do you current own a pool or spa? </p> 
+          <label class="validation font--is-small is-hidden--mobile"> <em>optional</em> </label>
+          <a class="button button-md btn-md--primary is-margin">Yes</a> <a class="button button-md is-margin">No</a>
+        </div>
+        <hr>
+       <div class="is-padding--top is-margin">
+         <p class="font--is-medium is--bold is-text--align">Send my email
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="14" viewBox="0 0 12 14">
+                <image id="arrow-icon" width="12" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAMAAAAsYw3eAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEUAAAABx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YAAABe1QsqAAAAKXRSTlMA7ugkcuAcf9QUjMkLAZe8BgOlrLKbXEv66ydC9vE0N/hBLe39T+lgcTJsuoQAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QoaCjkVChYhWgAAAFpJREFUCNclzLUBwAAMA8EwMzPj/gsmkl3dF7Kivv9pusIzEK9pSdksx5XyWH7ACCNWnLDSjJWnUgWrlFklL+m6gdsO7gd4nOB5hJcV3nb4OGH94vjm2KQf+gOr8g3qu/++rAAAAABJRU5ErkJggg=="/>
+            </svg>  
+         </p>
+       </div>                                            
+      </div>
+    </div>  
+  </div>
+</div>
+<div class="md-overlay"></div>     
+        </div>  
+      </section>
+  	</section>   
+    <div class="md-modal md-effect" id="modal-1">
+  <div class="md-content">
+    <div class="md-head">
+      <div class="md-btn--close">
+        <span id="md-close" class="is--bold">x</span>
+      </div>
+      <div class="md-head--nav">
+        <p class="font--is-small is-uppercase">Email</p>
+      </div>
+      <div class="md-head-title">  
+        <h1 id="md-title" class="font--is-large"></h1>
+      </div>
+    </div>
+    <div class="md-body">
+      <div class="md-desc">
+        <p id="modal-description" class="font--is-medium is--bold"></p>
+      </div>
+      <div class="md-contact">
+        <div class="field">
+          <label class="label">First and last name</label>
+          <div class="validation">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+                <image id="valid-icon" width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAMAAACeyVWkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA/1BMVEUAAAA206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206E206EAAABbkgkNAAAAU3RSTlMAQ5rY+/rUlTkzyvSgWTIgNV2pvCdl+ZYUG6j1UvhTZ09t8yKxCrol/Sq+0xW7gnW/SuFLR0DwXE5N3ml4uc7EejjAMfwBo4HqGFH2Pj0hsN3t3OKCTDMAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QoaCjY0wectywAAAOpJREFUGNNdz3lbgkAQBvA3cdVExSvwSkNJ0VKhvPPAvDVPvv93aSPQxfljdvf3zO7sAFY8eDivSXz+AG7xGORD4YgQjcVJIungkyil7G06k83Z+Jxn7hXIi3VdZBGQiyWagxLcoSi0O59i5LUso6JW4QmxWHt7B+oNcOF7RFODN3KP0D9gCsBni0W0OyBRoCv2GER/AF+Mrl9i74YYjuCPw+LxFTExMCVpa9DvK87mtFUi4x5toS1pTvIFl67Wm79lS2SmcrX7sX9SVCrOm9p67xQcjmq9qbf7w4m63DCPVRu10/kyMoT/4y9rdRpTDaDYpwAAAABJRU5ErkJggg=="/>
+             </svg>
+          </div>
+          <div class="control is-margin">
+            <input class="input" placeholder="Jane Smith" type="text">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Phone number</label>
+          <div class="validation validation--small">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+                <image id="invalid-icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAQAAABuvaSwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhChoKODfGbVH/AAABWElEQVQoz43TMWuTURgF4Cd36CDEIZPN4mzAWKVxjLEXahdBkIx2cQoO/oJM7R/IEDq5xNEKgkstXFozJqBNhDi7RKcMljq41KFBE63Jd9b34UznzZlJuuaJTXcUMPHBoZfx25977jfM29HwyWs9X7Hqrsdu2tOMp3M43fDWD8/jkbmk+1queBg/Q4BU0tVV+ZsSj1R0dVNp2pzyPup6Gs9dmpTzQtXteBqw60zjf5R4ruHMLrm06ovNeGxhUs2h68G2wTJKPDawHWzZX0bBvq2grJcJ95SDgnEmPFYImeA0wUQxkyyaBEPrmfC6YXCgngnXHQQda6m6TKaqNR2kVjpJKwvpSjpJrYvVNeW1Fxa35TWne04l773xLP68rFXbI/fiaLrnOFKzoZ9q/9Cavg21OGL2ra7a0TDwSt8YRRV1t+xpxu8XJjfXU7TtgfL0YYfe6cSZMfwCNWdnwd6BAVkAAAAASUVORK5CYII="/>
+              </svg>
+          </div>
+          <div class="control is-margin">
+            <input class="input input--small" placeholder="" type="text">
+          </div>
+        </div>  
+        <div class="field">
+          <label class="label">Email address</label>
+          <div class="validation">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+                <image id="invalid-icon" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAQAAABuvaSwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhChoKODfGbVH/AAABWElEQVQoz43TMWuTURgF4Cd36CDEIZPN4mzAWKVxjLEXahdBkIx2cQoO/oJM7R/IEDq5xNEKgkstXFozJqBNhDi7RKcMljq41KFBE63Jd9b34UznzZlJuuaJTXcUMPHBoZfx25977jfM29HwyWs9X7Hqrsdu2tOMp3M43fDWD8/jkbmk+1queBg/Q4BU0tVV+ZsSj1R0dVNp2pzyPup6Gs9dmpTzQtXteBqw60zjf5R4ruHMLrm06ovNeGxhUs2h68G2wTJKPDawHWzZX0bBvq2grJcJ95SDgnEmPFYImeA0wUQxkyyaBEPrmfC6YXCgngnXHQQda6m6TKaqNR2kVjpJKwvpSjpJrYvVNeW1Fxa35TWne04l773xLP68rFXbI/fiaLrnOFKzoZ9q/9Cavg21OGL2ra7a0TDwSt8YRRV1t+xpxu8XJjfXU7TtgfL0YYfe6cSZMfwCNWdnwd6BAVkAAAAASUVORK5CYII="/>
+              </svg>
+          </div>
+          <div class="control is-margin">
+            <input class="input" placeholder="" type="text">
+          </div>
+        </div>  
+        <div class="field">
+          <label class="label">Comments or questions</label>
+          <label class="validation font--is-small"> <em>optional</em> </label>
+          <div class="control">
+            <textarea name="message" class="msg-box--area"></textarea>
+          </div>
+        </div>
+        <div class="is-margin is-relative">  
+          <p class="font--is-medium is--bold"> Do you current own a pool or spa? </p> 
+          <label class="validation font--is-small is-hidden--mobile"> <em>optional</em> </label>
+          <a class="button button-md btn-md--primary is-margin">Yes</a> <a class="button button-md is-margin">No</a>
+        </div>
+        <hr>
+       <div class="is-padding--top is-margin">
+         <p class="font--is-medium is--bold is-text--align">Send my email
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="14" viewBox="0 0 12 14">
+                <image id="arrow-icon" width="12" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAMAAAAsYw3eAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEUAAAABx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YBx8YAAABe1QsqAAAAKXRSTlMA7ugkcuAcf9QUjMkLAZe8BgOlrLKbXEv66ydC9vE0N/hBLe39T+lgcTJsuoQAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QoaCjkVChYhWgAAAFpJREFUCNclzLUBwAAMA8EwMzPj/gsmkl3dF7Kivv9pusIzEK9pSdksx5XyWH7ACCNWnLDSjJWnUgWrlFklL+m6gdsO7gd4nOB5hJcV3nb4OGH94vjm2KQf+gOr8g3qu/++rAAAAABJRU5ErkJggg=="/>
+            </svg>  
+         </p>
+       </div>                                            
+      </div>
+    </div>  
+  </div>
+</div>
+<div class="md-overlay"></div> 
+  </body>
+  <script type="text/javascript" src="./js/app.js"></script>
+</html>
