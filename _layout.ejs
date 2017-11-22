@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>RV Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 750px)" href="./style/mobile.css">
+  </head>
+  <body>
+  	<section class="wrapper">
+      <% include partials/nav.ejs %>
+      <section class="card--grid">
+        <div id="card--group"> 
+          <!-- yields card from _index.ejs -->
+         <%- yield %>     
+        </div>  
+      </section>
+  	</section>   
+    <% include partials/modal.ejs %>
+  </body>
+  <script type="text/javascript" src="./js/app.js"></script>
+</html>
