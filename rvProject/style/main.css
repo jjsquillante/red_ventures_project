@@ -553,3 +553,13 @@ textarea.msg-box--area {
 .is--invisible {
   opacity: 0;
 }
+
+.fade-in {
+  opacity:0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode:forwards;
+  animation-duration: .5s;
+  animation-delay: .35s
+}
+/* hide body to prevent modal from displaying while DOM loads. */
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
