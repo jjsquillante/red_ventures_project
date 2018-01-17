@@ -1,4 +1,4 @@
-### Red Ventures Project
+### Red Ventures Code Project
 ___
 
 Visit URL: https://jjsquillante.github.io/red_ventures_project/
